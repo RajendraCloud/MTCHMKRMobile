@@ -1,0 +1,260 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "Telerik.XamarinForms.ConversationalUI/2023.1.117.500": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "StyleCop.MSBuild": "4.7.55",
+          "Telerik.XamarinForms.Common": "2023.1.117.500",
+          "Telerik.XamarinForms.DataControls": "2023.1.117.500",
+          "Telerik.XamarinForms.Input": "2023.1.117.500",
+          "Telerik.XamarinForms.Primitives": "2023.1.117.500",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.ConversationalUI.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "SkiaSharp/2.80.3": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.80.0.0",
+            "fileVersion": "2.80.3.0"
+          }
+        }
+      },
+      "SkiaSharp.Views.Forms/2.80.3": {
+        "dependencies": {
+          "SkiaSharp": "2.80.3",
+          "Xamarin.Forms": "5.0.0.2083"
+        }
+      },
+      "StyleCop.MSBuild/4.7.55": {},
+      "System.Buffers/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {
+            "assemblyVersion": "4.0.1.1",
+            "fileVersion": "4.6.27617.2"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "assemblyVersion": "4.1.3.0",
+            "fileVersion": "4.6.25519.3"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      },
+      "Xamarin.Forms/5.0.0.2083": {
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.716"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Platform.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.716"
+          },
+          "lib/netstandard2.0/Xamarin.Forms.Xaml.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "5.0.0.716"
+          }
+        }
+      },
+      "Telerik.XamarinForms.Common/2023.1.117.500": {
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.55",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.Common.dll": {}
+        }
+      },
+      "Telerik.XamarinForms.DataControls/2023.1.117.500": {
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.55",
+          "Telerik.XamarinForms.Common": "2023.1.117.500",
+          "Telerik.XamarinForms.Primitives": "2023.1.117.500",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.DataControls.dll": {}
+        }
+      },
+      "Telerik.XamarinForms.Input/2023.1.117.500": {
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.55",
+          "Telerik.XamarinForms.Common": "2023.1.117.500",
+          "Telerik.XamarinForms.DataControls": "2023.1.117.500",
+          "Telerik.XamarinForms.Primitives": "2023.1.117.500",
+          "Telerik.XamarinForms.SkiaSharp": "2023.1.117.500",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.Input.dll": {}
+        }
+      },
+      "Telerik.XamarinForms.Primitives/2023.1.117.500": {
+        "dependencies": {
+          "StyleCop.MSBuild": "4.7.55",
+          "Telerik.XamarinForms.Common": "2023.1.117.500",
+          "Telerik.XamarinForms.SkiaSharp": "2023.1.117.500",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.Primitives.dll": {}
+        }
+      },
+      "Telerik.XamarinForms.SkiaSharp/2023.1.117.500": {
+        "dependencies": {
+          "SkiaSharp": "2.80.3",
+          "SkiaSharp.Views.Forms": "2.80.3",
+          "Telerik.XamarinForms.Common": "2023.1.117.500",
+          "Xamarin.Forms": "5.0.0.2083"
+        },
+        "runtime": {
+          "Telerik.XamarinForms.SkiaSharp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Telerik.XamarinForms.ConversationalUI/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "SkiaSharp/2.80.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c3GUkHj52APlXX0At7VfuEcOmpUfSeRaGM3GzQ36NmHT62UHeFvblV31GXHu9oyzkgWwG2iupCgTskQ+L6t8mw==",
+      "path": "skiasharp/2.80.3",
+      "hashPath": "skiasharp.2.80.3.nupkg.sha512"
+    },
+    "SkiaSharp.Views.Forms/2.80.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oYPfHJn6Ah+QGrkNtptNvLhT9sh4tN09BvorBi+87WB4WPNy7GcnTT9cvyOiT+tDdc7Sca9LRKWEdH6jU7dOoQ==",
+      "path": "skiasharp.views.forms/2.80.3",
+      "hashPath": "skiasharp.views.forms.2.80.3.nupkg.sha512"
+    },
+    "StyleCop.MSBuild/4.7.55": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OFNAGMs0tc4OV+xW3++igzreiqCw6z7GQMs5Bn62Ps5iUXhXNw7AMBv4tkotgJwPo35cjziDaRKqhl02c1y9Rw==",
+      "path": "stylecop.msbuild/4.7.55",
+      "hashPath": "stylecop.msbuild.4.7.55.nupkg.sha512"
+    },
+    "System.Buffers/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==",
+      "path": "system.buffers/4.4.0",
+      "hashPath": "system.buffers.4.4.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cPzhWlLMdqrLrgXI6J4uOY0dMpA/Y/ZAp91KPldH8seoh9S/0i8qLkAnSQbPkWSN/RaXNPt8dOubT3JhQITh2w==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gdRrUJs1RrjW3JB5p82hYjA67xoeFLvh0SdSIWjTiN8qExlbFt/RtXwVYNc5BukJ/f9OKzQQS6gakzbJeHTqHg==",
+      "path": "system.numerics.vectors/4.4.0",
+      "hashPath": "system.numerics.vectors.4.4.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hMkdWxksypQlFXB7JamQegDscxEAQO4FHd/lw/zlSZU9dZgAij65xjCrXer183wvoNAzJic5zzjj2oc9/dloWg==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
+    "Xamarin.Forms/5.0.0.2083": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YmOVyinI5lt7nNOBfXJYuG6UHspVgW9+X44keudLrwoq71Md2QMEh6mx8haw1Z0zNU55Xulw5yJeHajEYsIY8g==",
+      "path": "xamarin.forms/5.0.0.2083",
+      "hashPath": "xamarin.forms.5.0.0.2083.nupkg.sha512"
+    },
+    "Telerik.XamarinForms.Common/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.DataControls/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.Input/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.Primitives/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Telerik.XamarinForms.SkiaSharp/2023.1.117.500": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

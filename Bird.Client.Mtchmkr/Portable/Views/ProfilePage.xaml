@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+     
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:imagecircle="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="Bird.Client.Mtchmkr.Portable.Views.ProfilePage"
+    xmlns:model="clr-namespace:Bird.Client.Mtchmkr.Portable.Models"
+    xmlns:views="clr-namespace:Bird.Client.Mtchmkr.Portable.Views"
+    xmlns:vm="clr-namespace:Bird.Client.Mtchmkr.Portable.ViewModels"
+    NavigationPage.HasNavigationBar="False"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    ios:Page.UseSafeArea="true"
+    xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input">
+    <Shell.NavBarIsVisible>False</Shell.NavBarIsVisible>
+    
+    <ContentPage.BindingContext>
+        <vm:ProfileViewModel />
+    </ContentPage.BindingContext>
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Log Out" Command="{Binding LogOutCommand}" />
+    </ContentPage.ToolbarItems>-->
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#96d1ff</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid  RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="160" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image Source="Pool.jpg" Aspect="AspectFill" />
+        <Image xct:IconTintColorEffect.TintColor="{StaticResource BackgroundColor}" Source="CurvedMask.png" Aspect="Fill" VerticalOptions="End" />
+        
+        <StackLayout Grid.Row="1" Padding="20,50,0,10" >
+            <telerikInput:RadShapeRating HorizontalOptions="Center"
+                                         Value="{Binding Rating,Mode=TwoWay}" IsEnabled="True" />
+
+        </StackLayout>
+
+        <ScrollView Grid.Row="2" >
+        <StackLayout Padding="20,20,0,10" >
+            <StackLayout Orientation="Horizontal" Margin="0,20,0,0">
+                <Label TextColor="Black" Text="Name : "/>
+                <Label TextColor="Black" Text="{Binding Name}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Text="Email : "/>
+                <Label TextColor="Black" Text="{Binding Email,Mode=TwoWay}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Text="Telephone : "/>
+                <Label TextColor="Black" Text="{Binding Telephone}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Text="Place : "/>
+                <Label TextColor="Black" Text="{Binding Place}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Text="Radius : "/>
+                <Label TextColor="Black" Text="{Binding RadiusLocator}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" IsVisible="false">
+                <Label TextColor="Black" Text="Avaibility : "/>
+                <Label TextColor="Black" Text="{Binding RegularAvailability}" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Text="Preferred game : "/>
+                <Label TextColor="Black" Text="{Binding Preferredgames}" FontAttributes="Bold"/>
+            </StackLayout>
+               
+            <StackLayout Orientation="Horizontal" IsVisible="false">
+                <Label TextColor="Black" Text="Plays Against : "/>
+                <Label TextColor="Black" Text="{Binding PlaysAgainst}" FontAttributes="Bold"/>
+            </StackLayout>
+
+
+            <!--<views:HistoricResults HorizontalOptions="Center" WidthRequest="300" HeightRequest="100" Margin="10,30,10,0" />-->
+
+            <Button VerticalOptions="End" HorizontalOptions="Fill" Text="Edit Profile" Style="{StaticResource FollowButton}" Command="{Binding EditProfileCommand}" Margin="20"/>
+        </StackLayout>
+            </ScrollView>
+        <imagecircle:CircleImage
+                        BorderColor="White"
+                        BorderThickness="6"  
+                        FillColor="White"
+                        Visual="Default"
+                        HeightRequest="100"
+                        Source="{Binding Image}"
+                        VerticalOptions="End"
+                        HorizontalOptions="Center"
+                        Aspect="AspectFill"
+                        WidthRequest="100" TranslationY="50">
+            </imagecircle:CircleImage>
+    </Grid>
+</ContentPage>
